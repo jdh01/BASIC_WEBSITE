@@ -1,23 +1,51 @@
 body{
+    margin:0;
     background:#ffffff;
     font-family: sans-serif;
 }
 
-h1, h2, p, li {
-    color:#000;
-}
-
-a {
-    color:blue;
-}
-
-p {
-    background: #666;
+header{
+    background: #999;
     color: white;
-    padding: 10px;
+    padding: 5px 15px 0 15px;
+
 }
 
-.secondary{
-    background: none;
-    color: #2a2727;
+header h1{
+    margin:0;
+    display: inline;
+}
+
+nav ul{
+    margin:0;
+    padding: 0 0 0 15px;
+    display: inline;
+}
+
+nav ul li{
+    background: black;
+    color: white;
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px 15px;
+    margin: 0;
+}
+
+nav ul li a{
+    color: white;
+}
+
+.row:after {
+    clear: both;
+    content: " ";
+    display: table;
+}
+
+.col{
+    float:left;
+    margin: 1%;
+    width: 30%;
+    background: #666;
+    border-radius: 5px;
+    padding: 3px;
 }
